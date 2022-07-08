@@ -1,14 +1,13 @@
-2022-07-07 15:28:59,896 :INFO : test_login :Login Successful
-2022-07-07 15:29:04,373 :INFO : test_locaion :Location Selected
-2022-07-07 15:29:04,992 :INFO : test_smschk_sendRR :Review Requet Sent
-2022-07-07 15:29:08,434 :INFO : test_smschk_sendRR :SMS count is reducing more than 1
-2022-07-07 15:29:26,543 :INFO : test_reviewsystem :old Reviwe Page Working and Collecting data
-2022-07-07 15:29:26,543 :INFO : test_reviewsystem :Private Feedback is working and getting data
-2022-07-07 15:29:45,278 :INFO : test_reviewsystem :Smart Reviwe Page Working and Collecting data
-2022-07-07 15:29:45,278 :INFO : test_reviewsystem :Private Feedback is working and getting data for Smart-Review
-2022-07-07 15:29:49,548 :INFO : test_inboxsearch :Inbox search is working
-2022-07-07 15:29:52,120 :INFO : test_addcomment :Comment Added
-2022-07-07 15:30:01,242 :INFO : test_customer :Customer data is not storing
-2022-07-07 15:30:06,297 :INFO : test_customer :Customer added
-2022-07-07 15:30:07,926 :INFO : test_Demographic360 :Demographic360 - Top 5 Cities Working
-2022-07-07 15:30:08,099 :INFO : test_Demographic360 :Demographic360 - Top 5 Interest Working
+2022-07-08 10:11:10,584 :INFO : test_login :Login Successful
+2022-07-08 10:11:14,974 :INFO : test_locaion :Location Selected
+2022-07-08 10:11:15,668 :INFO : test_smschk_sendRR :Review Requet Sent
+2022-07-08 10:11:19,097 :INFO : test_smschk_sendRR :SMS count is reducing more than 1
+2022-07-08 10:11:19,122 :INFO : test_count :Customer count is not increased
+2022-07-08 10:11:19,145 :INFO : test_count :Checkin count is not increased
+2022-07-08 10:11:37,964 :INFO : test_inboxsearch :Inbox search is working
+2022-07-08 10:11:40,438 :INFO : test_addcomment :Comment Added
+2022-07-08 10:11:49,288 :INFO : test_customer :Customer data is storinig
+2022-07-08 10:11:54,189 :INFO : test_customer :Customer added
+2022-07-08 10:11:55,651 :INFO : test_Demographic360 :Demographic360 - Top 5 Cities Working
+2022-07-08 10:11:55,796 :INFO : test_Demographic360 :Demographic360 - Top 5 Interest Working
+2022-07-08 10:12:01,863 :INFO : test_Coupon :Coupon not added

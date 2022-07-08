@@ -1,4 +1,3 @@
-from lib2to3.pgen2 import driver
 import time
 from selenium.webdriver.common.by import By
 
@@ -20,7 +19,7 @@ def test_customer(self):
     self.driver.implicitly_wait(5)
     name = self.driver.find_element(By.CSS_SELECTOR,"tbody tr:nth-child(1) td:nth-child(1)").text
     print(name)
-    if name == "TestAuto1":
+    if name == "AutoTest1":
         log.info("Customer data is storinig")
     else:
         log.info("Customer data is not storing")

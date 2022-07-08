@@ -16,12 +16,14 @@ def test_locaion(self):
         log.info("Location Selected")
     else:
         log.info("Location Not Selected")
+    global preCustomer
+    global precheckin
+    preCustomer = int(self.driver.find_element(By.XPATH,"//body//div//div[@role='tabpanel']//div//div//div[1]//div[2]//span[2]").text)
+    precheckin = int(self.driver.find_element(By.XPATH,"//body//div//div[@role='tabpanel']//div//div//div[2]//div[2]//span[2]").text)    
 
 def test_smschk_sendRR(self):
     
     log = self.getLogger()
-    preCustomer = int(self.driver.find_element(By.XPATH,"//body//div//div[@role='tabpanel']//div//div//div[1]//div[2]//span[2]").text)
-    precheckin = int(self.driver.find_element(By.XPATH,"//body//div//div[@role='tabpanel']//div//div//div[2]//div[2]//span[2]").text)    
                        #Review Request 
     smscount = int(self.driver.find_element(By.CLASS_NAME , "Sidebar_smsCount__1cD5l").text)
     if smscount > 0:
@@ -47,3 +49,22 @@ def test_smschk_sendRR(self):
         log.info("SMS Count reduced by 1 / Working")
     else:
         log.info("SMS count is reducing more than 1")
+
+
+def test_count(self):
+    log = self.getLogger()
+    # customer
+    customercount = int(self.driver.find_element(By.XPATH,"//body//div//div[@role='tabpanel']//div//div//div[1]//div[2]//span[2]").text)
+
+    if customercount == preCustomer+1:
+        log.info("Customer Count Increases/Working")
+    else:
+        log.info("Customer count is not increased")
+
+    # checkin
+    checkincount = int(self.driver.find_element(By.XPATH,"//body//div//div[@role='tabpanel']//div//div//div[2]//div[2]//span[2]").text)
+
+    if checkincount == precheckin+1:
+        log.info("Checkin Count Increases/Working")
+    else:
+        log.info("Checkin count is not increased")

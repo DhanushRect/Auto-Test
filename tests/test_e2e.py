@@ -8,6 +8,7 @@ from pageObjects import Businessprofile
 from pageObjects import Inbox
 from pageObjects import Customers
 from pageObjects import Demo360
+from pageObjects import Coupons
 
 
 class TestOne(BaseClass):
@@ -29,26 +30,31 @@ class TestOne(BaseClass):
 
 
     def test_dashboard(self):
-       Dashboard.test_locaion(self)
-       Dashboard.test_smschk_sendRR(self) 
+        Dashboard.test_locaion(self)
+        Dashboard.test_smschk_sendRR(self)
+        Dashboard.test_count(self)
 
      
     def test_businessprofile(self):
-        Businessprofile.test_reviewsystem(self)
+        Businessprofile.test_reviewsystem(self) #Change input details / change location for cleare result
 
 
     def test_inbox(self):
         Inbox.test_inboxsearch(self)
         Inbox.test_addcomment(self)
-        Inbox.test_addcoupon(self)
+        Inbox.test_addcoupon(self) 
 
 
     def test_customers(self):
-        Customers.test_customer(self)
+        Customers.test_customer(self) #Change input details / change location for cleare result
 
 
     def test_Demographic(self):
         Demo360.test_Demographic360(self)
+    
+    
+    def test_Coupons(self):
+        Coupons.test_Coupon(self) #Chane input details Accordingly to avoid Validation Error
 
 
         
