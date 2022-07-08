@@ -1,13 +1,14 @@
-2022-07-08 10:11:10,584 :INFO : test_login :Login Successful
-2022-07-08 10:11:14,974 :INFO : test_locaion :Location Selected
-2022-07-08 10:11:15,668 :INFO : test_smschk_sendRR :Review Requet Sent
-2022-07-08 10:11:19,097 :INFO : test_smschk_sendRR :SMS count is reducing more than 1
-2022-07-08 10:11:19,122 :INFO : test_count :Customer count is not increased
-2022-07-08 10:11:19,145 :INFO : test_count :Checkin count is not increased
-2022-07-08 10:11:37,964 :INFO : test_inboxsearch :Inbox search is working
-2022-07-08 10:11:40,438 :INFO : test_addcomment :Comment Added
-2022-07-08 10:11:49,288 :INFO : test_customer :Customer data is storinig
-2022-07-08 10:11:54,189 :INFO : test_customer :Customer added
-2022-07-08 10:11:55,651 :INFO : test_Demographic360 :Demographic360 - Top 5 Cities Working
-2022-07-08 10:11:55,796 :INFO : test_Demographic360 :Demographic360 - Top 5 Interest Working
-2022-07-08 10:12:01,863 :INFO : test_Coupon :Coupon not added
+
+2022-07-08 10:56:13,886 :INFO : test_login :Login Successful
+2022-07-08 10:56:18,299 :INFO : test_locaion :Location Selected
+2022-07-08 10:56:18,920 :INFO : test_smschk_sendRR :Review Requet Sent
+2022-07-08 10:56:22,342 :INFO : test_smschk_sendRR :SMS count is reducing more than 1
+2022-07-08 10:56:22,368 :INFO : test_count :Customer count is not increased
+2022-07-08 10:56:22,391 :INFO : test_count :Checkin count is not increased
+2022-07-08 10:56:32,700 :INFO : test_inboxsearch :Inbox search is working
+2022-07-08 10:56:35,136 :INFO : test_addcomment :Comment Added
+2022-07-08 10:56:43,954 :INFO : test_customer :Customer data is storinig
+2022-07-08 10:56:48,999 :INFO : test_customer :Customer added
+2022-07-08 10:56:50,520 :INFO : test_Demographic360 :Demographic360 - Top 5 Cities Working
+2022-07-08 10:56:50,680 :INFO : test_Demographic360 :Demographic360 - Top 5 Interest Working
+2022-07-08 10:56:56,728 :INFO : test_Coupon :Coupon not added

@@ -68,3 +68,38 @@ def test_count(self):
         log.info("Checkin Count Increases/Working")
     else:
         log.info("Checkin count is not increased")
+def test_Overview(self)
+    log = self.getLogger()
+
+    self.driver.find_element(By.XPATH,"//span[normalize-space()='Dashboard']").click()
+    overview = int(self.driver.find_element(By.XPATH,"//a[@class='nav-link active']//h6").text)
+    Customers = int(self.driver.find_element(By.XPATH,"//a[@data-rb-event-key='Customers']//h6").text)
+    PFeedback = int(self.driver.find_element(By.XPATH,"//a[@data-rb-event-key='Feedback']//h6").text)
+    Linkclick = int(self.driver.find_element(By.XPATH,"//a[@data-rb-event-key='Link']//h6").text)
+    QRscan = int(self.driver.find_element(By.XPATH,"//a[@data-rb-event-key='QR']//h6").text)
+
+
+    if overview != & > 0:
+        log.info("Overview Count reflecting")
+    else:
+        log.info("Overview count is not reflecting")
+
+    if Customers != & > 0:
+        log.info("Customer Count reflecting")
+    else:
+        log.info("Customer count is not reflecting")
+
+    if PFeedback != & > 0:
+        log.info("PrivateFeedback Count reflecting")
+    else:
+        log.info("PrivateFeedback count is not reflecting")
+
+    if Linkclick != & > 0:
+        log.info("Linkclick Count reflecting")
+    else:
+        log.info("Linkclick count is not reflecting")
+
+    if QRscan != & > 0:
+        log.info("QRscan Count reflecting")
+    else:
+        log.info("QRscan count is not reflecting")

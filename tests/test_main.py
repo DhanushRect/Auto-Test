@@ -18,8 +18,8 @@ class TestOne(BaseClass):
         log = self.getLogger()
         self.driver.find_element(By.ID, "username").send_keys("hurry2dheeraj@gmail.com")
         self.driver.find_element(By.ID, "password").send_keys("9985757091")
-        self.driver.find_element(By.XPATH, '//button[text()="Submit "]').click()     
-        time.sleep(3) 
+        self.driver.find_element(By.XPATH, '//button[text()="Submit "]').click()
+        time.sleep(3)
         dashboard = "https://app.rectangled.in/dashboard"
         page = self.driver.current_url
         if page == dashboard:
@@ -34,7 +34,7 @@ class TestOne(BaseClass):
         Dashboard.test_smschk_sendRR(self)
         Dashboard.test_count(self)
 
-     
+
     def test_businessprofile(self):
         Businessprofile.test_reviewsystem(self) #Change input details / change location for cleare result
 
@@ -42,7 +42,7 @@ class TestOne(BaseClass):
     def test_inbox(self):
         Inbox.test_inboxsearch(self)
         Inbox.test_addcomment(self)
-        Inbox.test_addcoupon(self) 
+        Inbox.test_addcoupon(self)
 
 
     def test_customers(self):
@@ -51,12 +51,7 @@ class TestOne(BaseClass):
 
     def test_Demographic(self):
         Demo360.test_Demographic360(self)
-    
-    
+
+
     def test_Coupons(self):
         Coupons.test_Coupon(self) #Chane input details Accordingly to avoid Validation Error
-
-
-        
-
-      
