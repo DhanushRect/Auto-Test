@@ -7,6 +7,7 @@ def test_Demographic360(self):
     log = self.getLogger()
     self.driver.find_element(By.XPATH,"//span[normalize-space()='Demographic 360°']").click()
     # top cities
+    self.driver.implicitly_wait(5)
     tc1 = (self.driver.find_element(By.XPATH,"//body[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/span[1]").text)
     tc2 = (self.driver.find_element(By.XPATH,"//body[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/span[1]").text)
     tc3 = (self.driver.find_element(By.XPATH,"//body[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[3]/td[2]/div[1]/span[1]").text)

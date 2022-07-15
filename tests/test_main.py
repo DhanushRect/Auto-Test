@@ -1,5 +1,5 @@
-import imp
 from ipaddress import ip_address
+from multiprocessing.connection import wait
 import time
 from selenium.webdriver.common.by import By
 from utilities.BaseClass import BaseClass
@@ -19,7 +19,7 @@ class TestOne(BaseClass):
         self.driver.find_element(By.ID, "username").send_keys("hurry2dheeraj@gmail.com")
         self.driver.find_element(By.ID, "password").send_keys("9985757091")
         self.driver.find_element(By.XPATH, '//button[text()="Submit "]').click()
-        time.sleep(3)
+        time.sleep(5)
         dashboard = "https://app.rectangled.in/dashboard"
         page = self.driver.current_url
         if page == dashboard:
@@ -32,7 +32,7 @@ class TestOne(BaseClass):
     def test_dashboard(self):
         Dashboard.test_locaion(self)
         Dashboard.test_smschk_sendRR(self)
-        Dashboard.test_count(self)
+        Dashboard.test_Overview(self)
 
 
     def test_businessprofile(self):
@@ -46,6 +46,7 @@ class TestOne(BaseClass):
 
 
     def test_customers(self):
+        Customers.test_customersearch(self)
         Customers.test_customer(self) #Change input details / change location for cleare result
 
 

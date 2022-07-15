@@ -18,7 +18,7 @@ def test_reviewsystem(self):
         self.driver.find_element(By.XPATH,"//a[normalize-space()='I did not like it!']").click()
         self.driver.implicitly_wait(5)
         self.driver.find_element(By.XPATH,"//div[@class='starrr']//a[position()=4]").click()
-        self.driver.find_element(By.XPATH,"//input[@placeholder='Name*']").send_keys("checkold10")
+        self.driver.find_element(By.XPATH,"//input[@placeholder='Name*']").send_keys("Automtion1")
         self.driver.find_element(By.XPATH,"//input[@id='phone']").send_keys("9398263767")
         self.driver.find_element(By.XPATH,"//textarea[@placeholder='How can we improve?']").send_keys("auto_improve")
         self.driver.find_element(By.XPATH,"//button[@id='submit-fb']").click()
@@ -29,7 +29,7 @@ def test_reviewsystem(self):
         self.driver.find_element(By.XPATH,"//span[normalize-space()='Private Feedback']").click()
         time.sleep(2)
         value = self.driver.find_element(By.CSS_SELECTOR,"tbody tr:nth-child(1) td:nth-child(2)").text
-        oldpage = "checkold10"
+        oldpage = "Automation1"
         if oldpage == value:
             log.info("old Reviwe Page Working and Collecting data")
             log.info("Private Feedback is working and getting data")
@@ -49,7 +49,7 @@ def test_reviewsystem(self):
         time.sleep(2)
         self.driver.find_element(By.XPATH,"//body/div/div/div/div/a[2]").click()
         self.driver.implicitly_wait(5)
-        self.driver.find_element(By.XPATH,"//input[@placeholder='Name*']").send_keys("checknew10")
+        self.driver.find_element(By.XPATH,"//input[@placeholder='Name*']").send_keys("Automation2.1")
         time.sleep(2)
         self.driver.find_element(By.XPATH,"//input[@id='phone']").send_keys("9398263767")
         time.sleep(2)
@@ -65,7 +65,7 @@ def test_reviewsystem(self):
         self.driver.find_element(By.XPATH,"//span[normalize-space()='Private Feedback']").click()
         time.sleep(2)
         value = self.driver.find_element(By.CSS_SELECTOR,"tbody tr:nth-child(1) td:nth-child(2)").text
-        newpage = "checknew10"
+        newpage = "Automation2.1"
         if newpage == value:
             log.info("Smart Reviwe Page Working and Collecting data")
             log.info("Private Feedback is working and getting data for Smart-Review")
@@ -79,8 +79,6 @@ def test_reviewsystem(self):
         self.driver.close()
         self.driver.switch_to.window(windows[0])
         self.driver.refresh()
-        self.driver.implicitly_wait(5)
-        self.drive.refresh()
         self.driver.implicitly_wait(5)
         self.driver.find_element(By.XPATH,"//div[@class='ProfileSettings_pageSettings__1qpQr']//span[contains(text(),'Edit')]").click()
         time.sleep(2)
