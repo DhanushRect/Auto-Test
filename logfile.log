@@ -1,0 +1,17 @@
+2022-07-20 14:28:23,228 :INFO : test_login :Login Successful
+2022-07-20 14:28:27,746 :INFO : test_locaion :Location Selected
+2022-07-20 14:28:34,646 :INFO : test_smschk_sendRR :Review Requet Sent
+2022-07-20 14:28:44,827 :INFO : test_smschk_sendRR :SMS count is reducing more than 1
+2022-07-20 14:29:02,623 :INFO : test_smschk_sendRR :Customer Count Increases/Working
+2022-07-20 14:29:02,667 :INFO : test_smschk_sendRR :Checkin Count Increases/Working
+2022-07-20 14:29:02,910 :INFO : test_Overview :Overview Count reflecting
+2022-07-20 14:29:02,910 :INFO : test_Overview :Customer Count reflecting
+2022-07-20 14:29:02,910 :INFO : test_Overview :PrivateFeedback Count reflecting
+2022-07-20 14:29:02,910 :INFO : test_Overview :Linkclick Count reflecting
+2022-07-20 14:29:02,910 :INFO : test_Overview :QRscan Count reflecting
+2022-07-20 14:29:11,041 :INFO : test_reviewsystem :old Reviwe Page is not Working and Collecting data
+2022-07-20 14:29:11,041 :INFO : test_reviewsystem :Private Feedback is not working and getting data
+2022-07-20 14:29:30,371 :INFO : test_reviewsystem :Smart Reviwe Page Working and Collecting data
+2022-07-20 14:29:30,371 :INFO : test_reviewsystem :Private Feedback is working and getting data for Smart-Review
+2022-07-20 14:29:35,791 :INFO : test_inboxsearch :Inbox search is working
+2022-07-20 14:29:40,315 :INFO : test_addcomment :Comment Added
